@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-image: url("https://wallpapertag.com/wallpaper/full/0/e/3/836582-top-soft-pink-wallpaper-1920x1080.jpg");
+    background-size: 2000px; 
+}
+
+h1 {text-align: center;
+    font-family: Rubik Doodle Shadow; 
+    font-size: 200px; 
+  }
+
+  #media {
+    position: relative;
+  }
+
+  #media embed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
