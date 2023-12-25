@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/css-cochon.css">
+
+  <script>
+    function redirectToChristmas() {
+      // Redirige vers une nouvelle page avec le message "Joyeux Noël"
+      window.location.href = "joyeux-noel-page.html?message=Joyeux%20Noel";
+    }
+  </script>
+
+  <title>Pour Cochon de Cauchemar</title>
+</head>
+
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#intro">Présentation</a></li>
+          <li><a href="#form">Questionnaire</a></li>
+          <li><a href="#credits">Credits</a></li>
+        </ul>
+      </nav>
+      <br>
+    </header>
+  
+    <main>
+      <section id="intro">
+        <h1>Cochon de Cauchemar</h1>
+  
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Cute_Piglet.jpg" alt="un mignon porcelet" height="400"><br>
+          <figcaption>Un Museau Fou.</figcaption>
+          <br>
+        </figure>
+        <h2>Cochon, qui es-tu ?</h2>
+        <p>
+          Le Cochon de Cauchemar est né à Fréjus, un 12 Octobre 90, ce qui fait de lui un porcin millénial - <em>a millennial pig</em>.<br>
+          Après être passé par l'île des cochons sauvages, la Corse, et avoir habilement évité les boucheries insulaires, avides d'en faire du saucisson,<br> le jeune cochon a rejoint le "Continent" où il vécu, selon ses dires, dans une grande indigence : une "porcherie" d'une pièce, avec mère et soeur.<br> Petit porcelet ne se vautrait pas pour autant dans la crasse, et endossait déjà des rôles dévolus aux adultes : ménage, cuisine, s'occuper de la benjamine...<br> Expériences parfois "limites" à l'origine d'obsessions qui, comme pour nombre d'artistes, sont aujourd'hui au coeur de ses créations.<br>
+          <br>Mais, ces quelques mots étant bien peu, apprenons à mieux connaître le Cochon...
+        </p><br>
+      </section>
+  
+      <section id="form">
+        <h2>Cochon, dis-moi tout :</h2>
+  
+        <form action="joyeux-noel-page.html" onsubmit="redirectToChristmas()" method="GET">
+  
+          <section class="color-selection">
+            <label for="color">Quelle est ta couleur préférée ?</label>
+            <select name="color" id="color" required>
+              <option>Rose</option>
+              <option>Rose cerise</option>
+              <option>Rose chair</option>
+              <option>Rose bisque</option>
+              <option>Rose framboise</option>
+              <option>Rose coquille d'oeuf</option>
+              <option>Rose saumon</option>
+              <option>Rose bonbon</option>
+              <option>Rose dragée</option>
+              <option>Rose cuisse de nymphe</option>
+              <option>Rose fuschia</option>
+              <option>Rose pêche</option>
+              <option>Rose vif</option>
+              <option>Rose Mountbatten</option>
+              <option>Rose thé</option>
+              <option>Rose incarnadin</option>
+              <option>Rose héliotrope</option>
+              <option>Rose magenta</option>
+            </select>
+          </section>
+  
+          <section class="friend-selection">
+            <label for="bf">Quel est ta/ton meilleur.e ami.e ?</label>
+            <input type="text" list="friend" name="bf" id="bf" required>
+            <datalist id="friend">
+              <option value="la grande chèvre"></option>
+              <option value="la vache qui bondit"></option>
+              <option value="l'Entité Poilue"></option>
+              <option value="le petit ostracisé"></option>
+              <option value="le Vilain Museau"></option>
+              <option value="Louise"></option>
+              <option value="Le Mou"></option>
+            </datalist>
+          </section>
+  
+          <section class="punishment">
+            <label for="punition">Si Le Mou n'est pas ton meilleur.e ami.e, comment le punirais-tu ?</label>
+            <input type="text" list="torture" name="punition" id="punition" size="40" required>
+            <datalist id="torture">
+              <option value="la priver de NussMussNussMussMuss"></option>
+              <option value="la priver de UrbanSport"></option>
+              <option value="la priver d'Entité Poilue"></option>
+              <option value="la priver de Kleinanzeigen"></option>
+              <option value="la priver de Daube"></option>
+              <option value="la priver de café reuch"></option>
+              <option value="la priver de la place du milieu au cinéma"></option>
+            </datalist>
+          </section>
+  
+          <section class="favorite">
+            <label for="favorite_part">Quelle est la partie que tu préfères chez toi ?</label>
+            <select name="favorite_part" id="favorite_part" required>
+              <option>l'oreille</option>
+              <option>la tête</option>
+              <option>les bajoues</option>
+              <option>le jarret</option>
+              <option>l'épaule</option>
+              <option>l'échine</option>
+              <option>le filet mignon</option>
+              <option>le ventre (bacon)</option>
+              <option>les côtelettes</option>
+              <option>la croupe</option>
+              <option>le Sacré-Coeur</option>
+              <option>le jambon</option>
+              <option>la Patte Folle</option>
+              <option>la queue tire-bouchon</option>
+            </select>
+          </section><br>
+  
+          <section class="income">
+            <label for="income">Combien souhaiterais-tu gagner par mois ? (net)</label>
+            <input type="number" name="income" id="income" min="100" max="10090" step="100" required>
+          </section>
+  
+          <section class="real_income">
+            <label for="rincome">Combien gagnes-tu par mois ? (brut)</label>
+            <input type="number" name="rincome" id="rincome" min="50" max="1000" step="50" required>
+          </section><br>
+  
+          <section class="today_mood">
+            <label for="mood">Quel est ton mood aujourd'hui ?</label><br>
+            <span>As Shit</span>
+            <input type="range" name="mood" id="mood" min="0" max="10" step="1" required>
+            <span>As Fuck</span>
+          </section>
+  
+          <section class="boobs_size">
+            <label for="boobs">Et les <em>mamelles</em>, quelle taille ?</label><br>
+            <span>75A</span>
+            <input type="range" name="boobs" id="boobs" min="0" max="10" step="1" required>
+            <span>95B</span>
+          </section><br>
+  
+          <section class="comment">
+            <label for="comment">Quelque chose à ajouter ?</label><br>
+            <textarea name="comment" id="comment" rows="5" cols="40" placeholder="... et pourquoi pas un poème en grognements ? groin-groin-groin-groin groin-groin groin-groin-groin groin..." required></textarea>
+          </section>
+  
+          <section class="submit">
+            <input type="submit" value="Submit">
+          </section>
+        </form>
+      </section>
+  
+    </main>
+  
+    <footer>
+      <section id="credits">
+        <p>Posted by: MilleniumMurmel</p>
+        <p>Contact information: laureproutproutcamembert@gmail.com</p>
+      </section>
+    </footer>
+  
+  </body>
+  
+  </html>
